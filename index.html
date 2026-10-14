@@ -1,1 +1,68 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jogo educativo de perguntas e respostas para o 6º ano.">
+  <title>Desafio do Saber 🎮</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>🌟 Desafio do Saber 🌟</h1>
+    <p>Aprender também pode ser divertido!</p>
+  </header>
+
+  <main class="container">
+    <section id="tela-inicial" class="cartao">
+      <div class="emoji">🎮📚</div>
+      <h2>Vamos jogar?</h2>
+      <p>Responda às perguntas, acumule pontos
+        e mostre tudo o que você sabe!</p>
+      <p class="destaque">Preparado para o desafio?</p>
+      <button id="btn-iniciar" class="botao botao-verde">
+        Começar jogo 🚀
+      </button>
+    </section>
+
+    <section id="tela-jogo" class="cartao escondido">
+      <div class="informacoes">
+        <span id="progresso">Pergunta 1 de 10</span>
+        <span id="pontuacao">⭐ Pontos: 0</span>
+      </div>
+
+      <div class="barra-progresso">
+        <div id="barra" class="barra"></div>
+      </div>
+
+      <h2 id="pergunta">Pergunta aparecerá aqui</h2>
+
+      <div id="alternativas" class="alternativas"></div>
+
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+
+      <button id="btn-proxima" class="botao botao-azul escondido">
+        Próxima pergunta ➜
+      </button>
+    </section>
+
+    <section id="tela-final" class="cartao escondido">
+      <div class="emoji" id="emoji-final">🏆</div>
+      <h2 id="titulo-final">Parabéns!</h2>
+      <p id="mensagem-final"></p>
+      <p id="resultado-final" class="resultado"></p>
+      <button id="btn-reiniciar" class="botao botao-roxo">
+        Jogar novamente 🔄
+      </button>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Feito para aprender brincando 💖</p>
+    <p>Desafio do Saber • 6º ano</p>
+  </footer>
+</body>
+</html>
+
